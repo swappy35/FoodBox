@@ -1,0 +1,41 @@
+<h2 class="cart">Cart</h2>
+<div class="container form-container">
+    <table class="table table-bordered" >
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Unit</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of products; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.price | currency:"INR":"symbol"}}</td>
+                <td>{{item.unit}}</td>
+                <td>{{item.quantity}} {{item.quantityType}} per Unit</td>
+                <td>{{item.total | currency:"INR":"symbol"}}</td>
+                <td>
+                    <button (click)="removeItem(item)" class="btn btn-danger">Delete</button>
+
+                </td>
+            </tr>
+            <tr>
+                <th colspan="8" style="text-align:right;">
+                    <button (click)="emptycart()" class="btn btn-danger" float-end>EmptyCart</button>&nbsp;&nbsp;
+                    <button (click)="checkoutcart()" class="btn btn-success" float-end>Checkout</button> &nbsp;&nbsp;
+
+                    <strong>Grand Total: {{grandTotal | currency:"INR":"symbol"}} </strong>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

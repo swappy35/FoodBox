@@ -1,0 +1,12 @@
+.form{
+    border: 2px solid rgb(107, 83, 33);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2px;
+}
+.has-error{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}

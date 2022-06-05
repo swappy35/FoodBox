@@ -1,0 +1,13 @@
+.order{
+    background-color: rgb(141, 216, 55);
+    border-radius: 20px;
+    margin: 260px;
+    padding: 5px;
+    
+}
+
+.note{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}

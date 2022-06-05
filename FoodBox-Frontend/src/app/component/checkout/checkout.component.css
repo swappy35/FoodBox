@@ -1,0 +1,59 @@
+/* .paymentcontainer {
+    margin-top: 5px;
+    padding: 3%;
+    background-color: rgb(97 173 152);
+    font-weight: bold;
+    font-size: medium;
+    width: 100%;
+} */
+
+.billcontainer {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 3%;
+    /* padding-bottom: 50px; */
+    background-color: rgb(41 104 137 / 73%);
+    font-weight: bold;
+    font-size: medium;
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--success);
+    border-color: #007bff;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 3rem !important;
+}
+
+.cart {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.cart-money{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.soil{
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+
+.order{
+    margin: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    border: 2px solid green;
+    background-color: green;
+    border-radius: 10px;
+}

@@ -1,0 +1,67 @@
+ul {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0px;
+}
+
+ul li a {
+    height: 25rem;
+    width: 20rem;
+    border: 3px solid whitesmoke;
+    border-radius: 1rem;
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+
+li a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+#name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(147, 56, 88);
+    font-weight: 200;
+}
+
+#price {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: rgb(42, 96, 25);
+    font-weight: 200;
+    text-align: left;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+#desc {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    text-align: justify;
+    color: rgb(147, 159, 78);
+    font-weight: 200;
+    padding: 5px;
+}
+
+.product {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#search{
+    margin:auto;
+    text-align: center;
+    width: 25%;
+}
+

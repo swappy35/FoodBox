@@ -1,0 +1,27 @@
+<h2 class="product">Products</h2>
+<div class="text-center">
+    <input type="text" class="form-control search-form" [ngModelOptions]="{standalone : true}" [(ngModel)]="searchItem"
+        id="search" placeholder="Search Products">
+</div>
+<div class="products">
+    <ul>
+        <li *ngFor="let product of products | searchFilter:searchItem">
+            <a>
+                <img src="{{product.imageUrl}}" alt="{{product.name}} [image not found]">
+                <div id="name">
+                    {{product.name}} 
+                </div>
+                <div id="price">
+                    {{product.price | currency:"INR":"symbol"}} per {{product.quantity}} {{product.quantityType}}<br>
+                </div>
+                <div id="desc">
+                    {{product.description}}
+                </div>
+                <div id="cart">
+                    <button (click)="addToCart(product)" class="btn btn-info col">Add To Cart </button>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+

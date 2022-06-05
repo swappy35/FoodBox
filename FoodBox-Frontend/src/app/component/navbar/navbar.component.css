@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.navbar-brand{
+    margin-right: 0rem;
+}
+.search-icon{
+    /* margin-top: -7px;
+    margin-bottom: 7px;
+    padding-top: 6px;
+    padding-right: 10px;
+    position: relative;
+    color: grey;
+    right: 4px;
+    top: 7px;
+    margin-right: 10px;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; */
+
+    margin-top: -7px;
+    margin-bottom: 7px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    position: relative;
+    color: grey;
+    right: 0px;
+    top: 7px;
+    margin-right: 10px;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-radius: 5px;
+} 
+
+#logo{
+    border-radius: 5px;
+    padding: 0px;
+    height: 50px;
+    width: 90px;
+
+}
+.mr-3{
+    margin-right: 10rem!important;
+}
+.navbar{
+    /* position: absolute; */
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #56a568;
+}
+.fa-solid{
+    font-size: 35px;
+}
+#cart{
+    margin-left: 5px;
+    margin-top: 7px;
+    font-size: 26px;
+    color: black;
+}
+.nav-link{
+    margin: 0%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.nav-item .nav-rit{
+    margin: 0%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+    /* font-size: 20px; */
+}
+#Lg{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(29 112 93);
+    margin-top: 3px;
+}
+#Reg{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(29 112 93);
+    margin-top: 3px;
+}
+#Lg-Out{
+    border-radius: 3px;
+    /* padding-left: 8px; */
+    padding: 3px;
+    background-color: rgb(29 112 93);
+    margin-top: 3px;
+    cursor: pointer;
+}
+/* a{
+    color: #af1313;
+}
+a:hover{
+    background-color: green;
+    color: black;
+} */

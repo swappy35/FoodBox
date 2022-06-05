@@ -1,0 +1,92 @@
+<div class="contaier form">
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form #registrationForm="ngForm" class="form-validate" novalidate>
+        <!-- First Name -->
+        <div class="form-row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" name="firstName" #firstname="ngModel"
+                        [(ngModel)]="user.firstName" id="fisrtName" aria-describedby="firstNameHelp" minlength="2"
+                        maxlength="15" required="">
+                    <small *ngIf="hasError(firstname)" [class]="hasError(firstname) ? 'has-error' : ''">
+                        <div *ngIf="firstname?.errors">
+                            <span *ngIf="firstname?.errors?.['required']">First Name is a required field</span>
+                            <span *ngIf="firstname?.errors?.['minlength']">First Name is min 2 character long
+                                field</span>
+                            <span *ngIf="firstname?.errors?.['maxlength']">First Name is max 15 character long
+                                field</span>
+                        </div>
+                    </small>
+                </div>
+            </div>
+            <!-- Last Name -->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName" #lastName="ngModel"
+                        [(ngModel)]="user.lastName" aria-describedby="lastNameHelp" minlength="3" maxlength="15"
+                        required>
+                    <small *ngIf="hasError(lastName)" [class]="hasError(lastName) ? 'has-error' :''">
+                        <div *ngIf="lastName?.errors">
+                            <span *ngIf="lastName?.errors?.['required']">Last Name is a required field</span>
+                            <span *ngIf="lastName?.errors?.['minlength']">Last Name is a min 3 char long field</span>
+                            <span *ngIf="lastName?.errors?.['maxlength']">Last Name is a max 15 char long field</span>
+                        </div>
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <!-- Email -->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" #email="ngModel"
+                        [(ngModel)]="user.email" aria-describedby="emailHelp" minlength="6" maxlength="30" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <small *ngIf="hasError(email)" [class]="hasError(email) ? 'has-error' :''">
+                        <div *ngIf="email?.errors">
+                            <span *ngIf="email?.errors?.['required']">Email is a required field</span>
+                            <span *ngIf="email?.errors?.['minlength']">Email is a min 6 char long field</span>
+                            <span *ngIf="email?.errors?.['maxlength']">Email is a max 20 char long field</span>
+                            <span *ngIf="email?.errors?.['pattern']">Please enter a valid email address</span>
+                        </div>
+                    </small>
+                </div>
+            </div>
+            <!-- Password -->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" #password="ngModel"
+                        [(ngModel)]="user.password" aria-describedby="passwordHelp" minlength="6" maxlength="15"
+                        required>
+                    <small *ngIf="hasError(password)" [class]="hasError(password) ? 'has-error' :''">
+                        <div *ngIf="password?.errors">
+                            <span *ngIf="password?.errors?.['required']">Password is a required field</span>
+                            <span *ngIf="password?.errors?.['minlength']">Password is a min 6 char long field</span>
+                            <span *ngIf="password?.errors?.['maxlength']">Password is a max 15 char long field</span>
+                        </div>
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <input type="hidden" name="role" value="customer" class="form-control" id="role" required>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <button type="submit" class="btn btn-info btn-block" (click)="onSubmit(registrationForm)">Submit</button>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </form>
+</div>

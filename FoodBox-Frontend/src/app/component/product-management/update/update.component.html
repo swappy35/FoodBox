@@ -1,0 +1,129 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
+            <h4>Product Form : </h4>
+            <form class="product-form" [formGroup]="productForm" (ngSubmit)="onSubmit(productForm)">
+                <div class="form-row">
+                    <!-- Product Name -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="name">Product Name</label>
+                            <input type="text" class="form-control" name="name" id="name" formControlName="name"
+                                aria-describedby="nameHelp">
+                            <small *ngIf="hasError('name')" [class]="hasError('name') ? 'error' :''">
+                                <div *ngIf="name.errors">
+                                    <span *ngIf="name.errors['required']">Product Name is a required field</span>
+                                    <span *ngIf="name.errors['minlength']">Product Name is a min 3 char long
+                                        field</span>
+                                    <span *ngIf="name.errors['maxlength']">Product Name is a max 30 char long
+                                        field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <!-- Product Type -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="type">Product Type</label>
+                            <input type="text" class="form-control" name="type" id="price" formControlName="type"
+                                aria-describedby="priceHelp">
+                            <small *ngIf="hasError('type')" [class]="hasError('type') ? 'error' :''">
+                                <div *ngIf="type.errors">
+                                    <span *ngIf="type.errors['required']">Product type is a required field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <!-- Product Price -->
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="price">Product Price</label>
+                            <input type="text" class="form-control" name="price" id="price" formControlName="price"
+                                aria-describedby="priceHelp">
+                            <small *ngIf="hasError('price')" [class]="hasError('price') ? 'error' :''">
+                                <div *ngIf="price.errors">
+                                    <span *ngIf="price.errors['required']">Price is a required field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <!-- Quantity -->
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" class="form-control" name="quantity" id="quantity"
+                                formControlName="quantity" aria-describedby="quantityHelp">
+                            <small *ngIf="hasError('quantity')" [class]="hasError('quantity') ? 'error' :''">
+                                <div *ngIf="quantity.errors">
+                                    <span *ngIf="quantity.errors['required']">Quantity is a required field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <!-- Quantity Type -->
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="quantityType">Quantity Type</label>
+                            <input type="text" class="form-control" name="quantityType" id="quantityType"
+                                formControlName="quantityType" aria-describedby="quantityTypeHelp">
+                            <small *ngIf="hasError('quantityType')" [class]="hasError('quantityType') ? 'error' :''">
+                                <div *ngIf="quantityType.errors">
+                                    <span *ngIf="quantityType.errors['required']">Quantity Type is a required
+                                        field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <!-- Unit -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="unit">Product Unit</label>
+                            <input type="text" class="form-control" name="unit" id="price" formControlName="unit"
+                                value=1 aria-describedby="unitHelp" readonly>
+                            <small *ngIf="hasError('unit')" [class]="hasError('unit') ? 'error' :''">
+                                <div *ngIf="unit.errors">
+                                    <span *ngIf="unit.errors['required']">Unit is a required field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <!-- Image URL -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="imageUrl">Image URL</label>
+                            <input type="text" class="form-control" name="imageUrl" id="imageUrl"
+                                formControlName="imageUrl" aria-describedby="imageUrlHelp">
+                            <small *ngIf="hasError('imageUrl')" [class]="hasError('imageUrl') ? 'error' :''">
+                                <div *ngIf="imageUrl.errors">
+                                    <span *ngIf="imageUrl.errors['required']">Image URL is a required field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <!-- description -->
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="description">Product Description</label>
+                            <textarea type="description" class="form-control" name="description" id="description"
+                                formControlName="description" aria-describedby="descriptionHelp"> </textarea>
+                            <small *ngIf="hasError('description')" [class]="hasError('description') ? 'error' :''">
+                                <div *ngIf="description.errors">
+                                    <span *ngIf="description.errors['required']">Description is a required field</span>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-success btn-block">Submit</button>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>

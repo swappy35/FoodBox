@@ -1,0 +1,290 @@
+{
+  "users": [
+    {
+      "firstName": "Ram",
+      "lastName": "Lal",
+      "email": "ram@gmail.com",
+      "password": "Ram@123",
+      "role": "customer",
+      "id": 1
+    },
+    {
+      "firstName": "Ram",
+      "lastName": "Lal",
+      "email": "rampal@gmail.com",
+      "password": "Ram@1234",
+      "role": "customer",
+      "id": 2
+    },
+    {
+      "firstName": "Swapnil",
+      "lastName": "Pal",
+      "email": "pal35swapnil35@gmail.com",
+      "password": "rgAPQ3X*",
+      "role": "customer",
+      "id": 3
+    },
+    {
+      "firstName": "Swapnil",
+      "lastName": "Kaka",
+      "email": "ramu@abc.com",
+      "password": "Ramu@123",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "firstName": "Ram",
+      "lastName": "Smith",
+      "email": "ramu@abc.com",
+      "password": "123456789",
+      "role": "customer",
+      "id": 5
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Smith",
+      "email": "mike@gmail.com",
+      "password": "Mike@123",
+      "role": "customer",
+      "id": 6
+    },
+    {
+      "firstName": "Swapnil",
+      "lastName": "Pal",
+      "email": "pal.swapnil@gmail.com",
+      "password": "swapnil@123",
+      "role": "customer",
+      "id": 7
+    },
+    {
+      "firstName": "Swapnil",
+      "lastName": "Pal",
+      "email": "swap.pal@gmail.com",
+      "password": "Swap@123",
+      "role": "customer",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Rice",
+      "type": "cereal",
+      "price": "250",
+      "quantity": "6",
+      "quantityType": "Kg",
+      "unit": 1,
+      "imageUrl": "./assets/images/Cereals/rice.jpg",
+      "description": "White long grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 2,
+      "name": "Pulse",
+      "type": "cereal",
+      "quantity": 2,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": "100",
+      "imageUrl": "./assets/images/Cereals/pulse.jpg",
+      "description": "Yellow shiny grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 3,
+      "name": "Wheat",
+      "type": "cereal",
+      "price": "300",
+      "quantity": "3",
+      "quantityType": "Kg",
+      "unit": 1,
+      "imageUrl": "./assets/images/Cereals/wheat.jpg",
+      "description": "Fresh aromatic grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 4,
+      "name": "Oats",
+      "type": "cereal",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 60,
+      "imageUrl": "./assets/images/Cereals/oats.jpg",
+      "description": "White aromatic grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 5,
+      "name": "Soyabean",
+      "type": "cereal",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 50,
+      "imageUrl": "./assets/images/Cereals/soyabean.jpg",
+      "description": "Rich sunflower husk. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 6,
+      "name": "Apple",
+      "type": "fruit",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 300,
+      "imageUrl": "./assets/images/Fruits-Vegetables/apple.jpg",
+      "description": "Red kashmiri apples. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 7,
+      "name": "Banana",
+      "type": "fruit",
+      "quantity": 12,
+      "unit": 1,
+      "quantityType": "Piece",
+      "price": 40,
+      "imageUrl": "./assets/images/Fruits-Vegetables/banana.jpg",
+      "description": "Long fresh banana. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 8,
+      "name": "Orange",
+      "type": "fruit",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 120,
+      "imageUrl": "./assets/images/Fruits-Vegetables/orange.jpg",
+      "description": "Fresh orange. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 9,
+      "name": "Grapes",
+      "type": "fruit",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 150,
+      "imageUrl": "./assets/images/Fruits-Vegetables/grape.jpg",
+      "description": "Fresh grapes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 10,
+      "name": "Watermelon",
+      "type": "fruit",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 200,
+      "imageUrl": "./assets/images/Fruits-Vegetables/watermelon.jpg",
+      "description": "Watery watermelon. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 11,
+      "name": "Cauliflower",
+      "type": "vegetable",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 40,
+      "imageUrl": "./assets/images/Fruits-Vegetables/cauliflower.jpg",
+      "description": "Green cauliflower. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 12,
+      "name": "Cabbage",
+      "type": "vegetable",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 30,
+      "imageUrl": "./assets/images/Fruits-Vegetables/cabage.jpg",
+      "description": "Green cabbage. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 13,
+      "name": "Tomato",
+      "type": "vegetable",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 25,
+      "imageUrl": "./assets/images/Fruits-Vegetables/tomato.jpg",
+      "description": "Red fresh tomato. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 14,
+      "name": "Potato",
+      "type": "vegeatble",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 20,
+      "imageUrl": "./assets/images/Fruits-Vegetables/potato.jpg",
+      "description": "Organic potato. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 15,
+      "name": "Ladyfinger",
+      "type": "vegetable",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 30,
+      "imageUrl": "./assets/images/Fruits-Vegetables/ladyfinger.jpg",
+      "description": "Green medium size ladyfinger. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 16,
+      "name": "Bread",
+      "type": "daily-essentials",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Pack",
+      "price": 30,
+      "imageUrl": "./assets/images/Daily-Essentials/bread.png",
+      "description": "Fresh from bakery. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 17,
+      "name": "Milk",
+      "type": "daily-essentials",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "L",
+      "price": 45,
+      "imageUrl": "./assets/images/Daily-Essentials/milk.png",
+      "description": "Fresh from farm. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 18,
+      "name": "Cheese",
+      "type": "daily-essentials",
+      "quantity": 0.2,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 20,
+      "imageUrl": "./assets/images/Daily-Essentials/cheese.png",
+      "description": "Extra thick. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 19,
+      "name": "Butter",
+      "type": "daily-essentials",
+      "quantity": 0.2,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 30,
+      "imageUrl": "./assets/images/Daily-Essentials/butter.png",
+      "description": "Fresh from farm. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    },
+    {
+      "id": 20,
+      "name": "Paneer",
+      "type": "daily-essentials",
+      "quantity": 1,
+      "unit": 1,
+      "quantityType": "Kg",
+      "price": 400,
+      "imageUrl": "./assets/images/Daily-Essentials/paneer.png",
+      "description": "Fresh and soft. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+    }
+  ]
+}
