@@ -33,7 +33,7 @@ public class ProductController {
 	}
 	
 	@GetMapping(value = "/search/id/{id}")
-	public Optional<ProductModel> getProduct(@PathVariable int id) {
+	public Optional<ProductModel> getProduct(@PathVariable Long id) {
 		return prod_repo.findById(id);
 	}
 

@@ -2,121 +2,119 @@ package com.webapp.main.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+
 @Entity
-@Table(name = "PRODUCT")
+@Table(name = "product_tbl")
 @EnableTransactionManagement
 public class ProductModel {
 	
 	@Id
-	@Column(name = "ID")
-	private int ProductId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "product_id")
+	private Long productId;
 	
-	@Column(name = "Name")
-	private String ProductName;
+	@Column(name = "product_name")
+	private String productName;
 	
-	@Column(name = "Quantity")
-	private int ProductQuantity; 
+	@Column(name = "product_quantity")
+	private int productQuantity; 
 	
-	@Column(name = "Time")
-	private String CookingTime;
+	@Column(name = "cooking_time")
+	private String cookingTime;
 	
-	@Column(name = "Price")
-	private float ProductPrice;
+	@Column(name = "product_price")
+	private float productPrice;
 	
-	@Column(name = "ImageUrl")
-	private String ImageUrl;
+	@Column(name = "image_url")
+	private String imageUrl;
 	
-	@Column(name = "Description")
-	private String ProductDescription;
-
-	public int getProductId() {
-		return ProductId;
-	}
-
-	public void setProductId(int productId) {
-		ProductId = productId;
-	}
-
-	public String getProductName() {
-		return ProductName;
-	}
-
-	public void setProductName(String productName) {
-		ProductName = productName;
-	}
-
-	public int getProductQuantity() {
-		return ProductQuantity;
-	}
-
-	public void setProductQuantity(int productQuantity) {
-		ProductQuantity = productQuantity;
-	}
-
-	public String getCookingTime() {
-		return CookingTime;
-	}
-
-	public void setCookingTime(String cookingTime) {
-		CookingTime = cookingTime;
-	}
-
-	public float getProductPrice() {
-		return ProductPrice;
-	}
-
-	public void setProductPrice(float productPrice) {
-		ProductPrice = productPrice;
-	}
-
-	public String getImageUrl() {
-		return ImageUrl;
-	}
-
-	public void setImageUrl(String imageUrl) {
-		ImageUrl = imageUrl;
-	}
-
-	public String getProductDescription() {
-		return ProductDescription;
-	}
-
-	public void setProductDescription(String productDescription) {
-		ProductDescription = productDescription;
-	}
-
-	public ProductModel(int productId, String productName, int productQuantity, String cookingTime, float productPrice,
-			String imageUrl, String productDescription) {
-		super();
-		ProductId = productId;
-		ProductName = productName;
-		ProductQuantity = productQuantity;
-		CookingTime = cookingTime;
-		ProductPrice = productPrice;
-		ImageUrl = imageUrl;
-		ProductDescription = productDescription;
-	}
+	@Column(name = "product_description")
+	private String productDescription;
 
 	public ProductModel() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
+	public ProductModel(String productName, int productQuantity, String cookingTime, float productPrice,
+			String imageUrl, String productDescription) {
+		super();
+		this.productName = productName;
+		this.productQuantity = productQuantity;
+		this.cookingTime = cookingTime;
+		this.productPrice = productPrice;
+		this.imageUrl = imageUrl;
+		this.productDescription = productDescription;
+	}
+
+	public Long getProductId() {
+		return productId;
+	}
+
+	public void setProductId(Long productId) {
+		this.productId = productId;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public int getProductQuantity() {
+		return productQuantity;
+	}
+
+	public void setProductQuantity(int productQuantity) {
+		this.productQuantity = productQuantity;
+	}
+
+	public String getCookingTime() {
+		return cookingTime;
+	}
+
+	public void setCookingTime(String cookingTime) {
+		this.cookingTime = cookingTime;
+	}
+
+	public float getProductPrice() {
+		return productPrice;
+	}
+
+	public void setProductPrice(float productPrice) {
+		this.productPrice = productPrice;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
+	public String getProductDescription() {
+		return productDescription;
+	}
+
+	public void setProductDescription(String productDescription) {
+		this.productDescription = productDescription;
+	}
+
 	@Override
 	public String toString() {
-		return "ProductModel [ProductId=" + ProductId + ", ProductName=" + ProductName + ", ProductQuantity="
-				+ ProductQuantity + ", CookingTime=" + CookingTime + ", ProductPrice=" + ProductPrice + ", ImageUrl="
-				+ ImageUrl + ", ProductDescription=" + ProductDescription + "]";
+		return "ProductModel [productId=" + productId + ", productName=" + productName + ", productQuantity="
+				+ productQuantity + ", cookingTime=" + cookingTime + ", productPrice=" + productPrice + ", imageUrl="
+				+ imageUrl + ", productDescription=" + productDescription + "]";
 	}
-	
-	
-	
-	
-	
 	
 }
