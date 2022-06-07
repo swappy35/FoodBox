@@ -40,8 +40,8 @@ export class UserService {
 
   //add user
   public addUser(user:any){
-   return this.httpClient.post(this.url,user);
-   //return this.httpClient.post(this.url + '/addadmin/', user);
+  //  return this.httpClient.post(this.url,user);
+   return this.httpClient.post(this.url + '/addadmin/', user);
   }
 
   //update user

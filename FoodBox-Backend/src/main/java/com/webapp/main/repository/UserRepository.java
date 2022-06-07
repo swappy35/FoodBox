@@ -12,4 +12,7 @@ import com.webapp.main.model.UserModel;
 public interface UserRepository extends JpaRepository<UserModel, Long>{
 	@Query("SELECT r FROM UserModel r WHERE r.userRole = ?1")
 	List<UserModel> findByuserRole(String userRole);
+	
+	@Query("SELECT e FROM UserModel e WHERE e.userEmail = ?1")
+	List<UserModel> findByuserEmail(String userEmail);
 }

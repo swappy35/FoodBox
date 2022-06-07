@@ -13,7 +13,7 @@ export class AuthserviceService {
 
   get isCustLoggedIn() {
     const custLogin = sessionStorage.getItem('CustLogin');
-    // console.log("Authorisation");
+    console.log("Authorisation");
     console.log("Customer "+custLogin);
     if(custLogin == 'true'){
       this.custLoggedIn.next(true);
@@ -25,7 +25,7 @@ export class AuthserviceService {
 
   get isAdmLoggedIn() {
     const admLogin = sessionStorage.getItem('AdmLogin');
-    // console.log("Authorisation");
+    console.log("Authorisation");
     console.log("Admin "+admLogin);
     if(admLogin == 'true'){
       this.admLoggedIn.next(true);
