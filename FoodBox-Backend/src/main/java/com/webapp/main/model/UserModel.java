@@ -9,7 +9,10 @@ import javax.persistence.Table;
 
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
+@JsonIgnoreProperties
 @Table(name = "user_tbl")
 @EnableTransactionManagement
 public class UserModel {
