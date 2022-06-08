@@ -10,11 +10,12 @@ import { UserService } from 'src/app/service/user.service';
 export class RegisterComponent implements OnInit {
 
   public user: User = {
+    Id:0,
     firstName:'',
     lastName:'',
-    email:'',
-    password:'',
-    role:''
+    userEmail:'',
+    userPassword:'',
+    userRole:''
   }
   public submitted:boolean = false;
   constructor(private userSrv:UserService, private router:Router) { }
@@ -24,10 +25,11 @@ export class RegisterComponent implements OnInit {
 
 
   onSubmit(form:any) {
+    console.log(form);
     if(form.valid){
       this.submitted = true;
       console.log(this.user);
-      this.user.role = "customer";
+      this.user.userRole = "customer";
       this.userSrv.addUser(this.user).subscribe(res=>{
         console.log(res);
         this.router.navigateByUrl('login');
@@ -55,9 +57,10 @@ export class RegisterComponent implements OnInit {
 }
 
 interface User {
+  Id:number;
   firstName:string;
   lastName:string;
-  email:string;
-  password:string;
-  role:any;
+  userEmail:string;
+  userPassword:string;
+  userRole:any;
 }

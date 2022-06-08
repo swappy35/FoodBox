@@ -44,7 +44,7 @@
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input type="email" class="form-control" name="email" id="email" #email="ngModel"
-                        [(ngModel)]="user.email" aria-describedby="emailHelp" minlength="6" maxlength="30" required
+                        [(ngModel)]="user.userEmail" aria-describedby="emailHelp" minlength="6" maxlength="30" required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     <small *ngIf="hasError(email)" [class]="hasError(email) ? 'has-error' :''">
                         <div *ngIf="email?.errors">
@@ -61,7 +61,7 @@
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" id="password" #password="ngModel"
-                        [(ngModel)]="user.password" aria-describedby="passwordHelp" minlength="6" maxlength="15"
+                        [(ngModel)]="user.userPassword" aria-describedby="passwordHelp" minlength="6" maxlength="15"
                         required>
                     <small *ngIf="hasError(password)" [class]="hasError(password) ? 'has-error' :''">
                         <div *ngIf="password?.errors">

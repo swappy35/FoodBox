@@ -8,10 +8,10 @@ export class ProductService {
 
   constructor(private httpClient: HttpClient) { }
 
-  private url: string = 'http://localhost:3000/products';
+  private url: string = 'http://localhost:8082/foodbox/products';
 
   public getProducts() {
-    return this.httpClient.get(this.url);
+    return this.httpClient.get(this.url + `/display/all`);
   }
 
   public getProductByType(type: string) {
