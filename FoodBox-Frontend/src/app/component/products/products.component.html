@@ -13,8 +13,13 @@
                 <div id="name">
                     {{product.productName}}
                 </div>
-                <div id="price">
-                    {{product.productPrice | currency:"INR":"symbol"}} <br>
+                <div class="row">
+                    <div class="col" id="price">
+                        {{product.productPrice | currency:"INR":"symbol"}} <br>
+                    </div>
+                    <div class="col" id="time">
+                        {{product.cookingTime}} <br>
+                    </div>
                 </div>
                 <div id="desc">
                     {{product.productDescription}}
