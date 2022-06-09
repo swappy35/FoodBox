@@ -34,18 +34,17 @@ export class UserService {
   // }
 
   //get one user by role
-  public getUserByRole(role: string) {
+  public getUserByRole(userRole: string) {
     // return this.httpClient.get(`${this.url}?role=${role}`);
-    console.log(role); 
-    console.log((this.url + '/getadminByEmail/' + `${role}`)); 
-    // return this.httpClient.get(this.url + '/getadminByEmail/' + `${role}`);
-    return this.httpClient.get(this.url + '/user/role/' + `${role}`);
+    // console.log(userRole); 
+    // console.log((this.url + '/user/role/' + `${userRole}`)); 
+    return this.httpClient.get(this.url + '/role/' + `${userRole}`);
   }
 
   //add user
   public addUser(user: any) {
     //  return this.httpClient.post(this.url,user);
-    console.log(this.httpClient.post(this.url + '/user/add/', user));
+    // console.log(this.httpClient.post(this.url + '/user/add/', user));
     return this.httpClient.post(this.url + '/user/add/', user);
   }
 

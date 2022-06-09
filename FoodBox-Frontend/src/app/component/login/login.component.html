@@ -1,6 +1,6 @@
 <div class="container form">
     <h1 style="text-align: center;">Login Form</h1>
-    <div *ngIf="message!=''" class="alert alert-danger" role="alert">
+    <div *ngIf="message!=''" class="alert alert-danger" userRole="alert">
         {{message}}
     </div>
     <form class="form-validate" novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
@@ -9,15 +9,15 @@
             <!-- Email -->
             <div class="col-sm-6">
                 <div class="form-Group">
-                    <label for="email">Email ID</label>
-                    <input type="email" class="form-control" name="email" id="email" formControlName="email"
-                        aria-describedby="emailHelp">
-                    <small *ngIf="hasError('email')" [class]="hasError('email') ? 'has-error' : '' ">
-                        <div *ngIf="email?.errors">
-                            <span *ngIf="email?.errors?.['required']">Email is a required field </span>
-                            <span *ngIf="email?.errors?.['minlength']">Email is min 6 char long field </span>
-                            <span *ngIf="email?.errors?.['maxlegth']">Email is max 30 char long field </span>
-                            <span *ngIf="email?.errors?.['email']">Please enter a valid Email ID</span>
+                    <label for="userEmail">Email ID</label>
+                    <input type="Email" class="form-control" name="userEmail" id="userEmail" formControlName="userEmail"
+                        aria-describedby="userEmailHelp">
+                    <small *ngIf="hasError('userEmail')" [class]="hasError('userEmail') ? 'has-error' : '' ">
+                        <div *ngIf="userEmail?.errors">
+                            <span *ngIf="userEmail?.errors?.['required']">Email is a required field </span>
+                            <span *ngIf="userEmail?.errors?.['minlength']">Email is min 6 char long field </span>
+                            <span *ngIf="userEmail?.errors?.['maxlegth']">Email is max 30 char long field </span>
+                            <span *ngIf="userEmail?.errors?.['userEmail']">Please enter a valid Email ID</span>
                         </div>
                     </small>
                 </div>
@@ -29,14 +29,14 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <div class="form-Group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password" id="password" formControlName="password"
-                        aria-describedby="passwordHelp">
-                    <small *ngIf="hasError('password')" [class]="hasError('password') ? 'has-error' : '' ">
-                        <div *ngIf="password?.errors">
-                            <span *ngIf="password?.errors?.['required']">Password is a required field </span>
-                            <span *ngIf="password?.errors?.['minlength']">Password  is min 6 char long field </span>
-                            <span *ngIf="password?.errors?.['maxlegth']">Password  is max 30 char long field </span>
+                    <label for="userPassword">Password</label>
+                    <input type="Password" class="form-control" name="userPassword" id="userPassword" formControlName="userPassword"
+                        aria-describedby="userPasswordHelp">
+                    <small *ngIf="hasError('userPassword')" [class]="hasError('userPassword') ? 'has-error' : '' ">
+                        <div *ngIf="userPassword?.errors">
+                            <span *ngIf="userPassword?.errors?.['required']">Password is a required field </span>
+                            <span *ngIf="userPassword?.errors?.['minlength']">Password  is min 6 char long field </span>
+                            <span *ngIf="userPassword?.errors?.['maxlegth']">Password  is max 30 char long field </span>
                         </div>
                     </small>
                 </div>
@@ -50,16 +50,16 @@
                 <div class="form-check">
                     <br>
                     <!-- <p>Login as:</p> -->
-                    <input class="form-check-input" type="radio" id="role" name="role" value="admin"
-                        formControlName="role">
-                    <label for="role" class="form-check-label">Login as Admin</label>
+                    <input class="form-check-input" type="radio" id="userRole" name="userRole" value="admin"
+                        formControlName="userRole">
+                    <label for="userRole" class="form-check-label">Login as Admin</label>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input class="form-check-input" type="radio" id="role" name="role" value="customer"
-                        formControlName="role">
-                    <label for="role" class="form-check-label">Login as Customer</label>
-                    <small *ngIf="hasError('role')" [class]="hasError('role') ? 'has-error' :''">
-                        <div *ngIf="role?.errors">
-                            <span *ngIf="role?.errors?.['required']"> Please check appropriate role!</span>
+                    <input class="form-check-input" type="radio" id="userRole" name="userRole" value="customer"
+                        formControlName="userRole">
+                    <label for="userRole" class="form-check-label">Login as Customer</label>
+                    <small *ngIf="hasError('userRole')" [class]="hasError('userRole') ? 'has-error' :''">
+                        <div *ngIf="userRole?.errors">
+                            <span *ngIf="userRole?.errors?.['required']"> Please check appropriate userRole!</span>
                         </div>
                     </small>
                 </div>

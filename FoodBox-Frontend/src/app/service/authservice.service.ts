@@ -40,11 +40,12 @@ export class AuthserviceService {
   custLogin(user:User){
     const userGetRole = sessionStorage.getItem('userRole');
     console.log("Get role "+userGetRole);
-    if(userGetRole === 'customer'){
+    if(userGetRole === 'customer' || userGetRole === 'Customer'){
       this.allowed = 'true';
+      console.log("Get role "+userGetRole);
     }
 
-    if(user.userName !== '' && user.password !== '' && this.allowed === 'true'){
+    if(user.Email !== '' && user.Password !== '' && this.allowed === 'true'){
       this.custLoggedIn.next(true);
       sessionStorage.setItem("CustLogin", 'true');
       this.router.navigate(['/home']);
@@ -54,11 +55,11 @@ export class AuthserviceService {
   admLogin(user:User){
     const userGetRole = sessionStorage.getItem('userRole');
     console.log("Get role "+userGetRole);
-    if(userGetRole === 'admin'){
+    if(userGetRole === 'admin' || userGetRole === 'Admin'){
       this.allowed = 'true';
     }
 
-    if(user.userName !== '' && user.password !== '' && this.allowed === 'true'){
+    if(user.Email !== '' && user.Password !== '' && this.allowed === 'true'){
       this.custLoggedIn.next(true);
       sessionStorage.setItem("AdmLogin", 'true');
       this.router.navigate(['/home']);
@@ -74,7 +75,7 @@ export class AuthserviceService {
 
 }
 interface User{
-  userName:string;
-  password:string;
-  role:string;
+  Email:string;
+  Password:string;
+  Role:string;
 }
