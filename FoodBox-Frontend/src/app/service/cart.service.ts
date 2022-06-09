@@ -22,16 +22,17 @@ export class CartService {
   }
 
   addToCart(product : any){
-    const cartObj = this.cartItem.find((element : any) => element.id === product.id);
+    const cartObj = this.cartItem.find((element : any) => element.productId === product.productId);
 
+    console.log(product.productId);
     console.log(cartObj);
 
     if(cartObj){
-      console.log("Available "+cartObj.price);
-      let storeIndex = this.cartItem.findIndex((e:any) => e.id == product.id);
+      console.log("Available "+cartObj.productId);
+      let storeIndex = this.cartItem.findIndex((e:any) => e.productId == product.productId);
       console.log(storeIndex);
-      this.cartItem[storeIndex].unit = +this.cartItem[storeIndex].unit + +1;
-      this.cartItem[storeIndex].total = this.cartItem[storeIndex].unit * cartObj.price;
+      this.cartItem[storeIndex].quantity = +this.cartItem[storeIndex].quantity + +1;
+      this.cartItem[storeIndex].total = this.cartItem[storeIndex].quantity * cartObj.productPrice;
     }
     else{
       console.log("Not Available");
@@ -52,7 +53,7 @@ export class CartService {
 
   removeCartItem(product : any){
     this.cartItem.map((a :any, index :any) =>{
-      if(product.id === a.id){
+      if(product.productId === a.productId){
         this.cartItem.splice(index, 1);
       }
     })

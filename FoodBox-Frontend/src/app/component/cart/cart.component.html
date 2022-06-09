@@ -7,7 +7,6 @@
                 <th>Product Name</th>
                 <th>Description</th>
                 <th>Price</th>
-                <th>Unit</th>
                 <th>Quantity</th>
                 <th>Total Price</th>
                 <th>Action</th>
@@ -16,11 +15,10 @@
         <tbody>
             <tr *ngFor="let item of products; let i = index">
                 <td>{{i+1}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.description}}</td>
-                <td>{{item.price | currency:"INR":"symbol"}}</td>
-                <td>{{item.unit}}</td>
-                <td>{{item.quantity}} {{item.quantityType}} per Unit</td>
+                <td>{{item.productName}}</td>
+                <td>{{item.productDescription}}</td>
+                <td>{{item.productPrice | currency:"INR":"symbol"}}</td>
+                <td>{{item.quantity}}</td>
                 <td>{{item.total | currency:"INR":"symbol"}}</td>
                 <td>
                     <button (click)="removeItem(item)" class="btn btn-danger">Delete</button>

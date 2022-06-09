@@ -23,6 +23,7 @@ table {
 
 
 .table-bordered th {
+    text-align: center;
     border: 2px solid black;
     border-radius: 10px;
     background-color: rgb(159, 240, 97);
@@ -30,6 +31,7 @@ table {
 }
 
 .table-bordered td{
+    text-align: center;
     border: 2px dashed black;
     border-radius: 10px;
     background-color: rgb(97, 207, 240);

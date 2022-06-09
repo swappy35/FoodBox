@@ -34,7 +34,7 @@ export class ProductsComponent implements OnInit {
       console.log(data);
       this.products = data;
       this.products.forEach((a: any) => {
-        Object.assign(a, { unit: 1, total: a.price });
+        Object.assign(a, { quantity: 1, total: a.productPrice });
       });
     });
   }
