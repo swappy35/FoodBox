@@ -26,9 +26,9 @@ export class ProductManagementComponent implements OnInit {
       this.products = data;
     });
   }
-  onDelete(id: string) {
-    console.log("Delete trigger " + id);
-    this.productSrv.deleteProduct(id).subscribe(res => {
+  onDelete(productId: any) {
+    console.log("Delete trigger " + productId);
+    this.productSrv.deleteProduct(productId).subscribe(res => {
       console.log("Product is delete sucessfully.");
       this.getProducts();
     });

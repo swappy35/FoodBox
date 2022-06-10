@@ -6,20 +6,25 @@
   <ul>
     <li *ngFor="let product of products | searchFilter:searchItem">
       <a>
-        <img src="{{product.imageUrl}}" alt="{{product.name}} [image not found]">
+        <img src="{{product.imageUrl}}" alt="{{product.productName}} [image not found]">
         <div id="name">
-          {{product.name}}
+          {{product.productName}}
         </div>
-        <div id="price">
-          {{product.price | currency:"INR":"symbol"}} per unit of ({{product.quantity}} {{product.quantityType}})<br>
+        <div class="row">
+          <div class="col" id="price">
+            {{product.productPrice | currency:"INR":"symbol"}} <br>
+          </div>
+          <div class="col" id="time">
+            {{product.cookingTime}} <br>
+          </div>
         </div>
         <div id="desc">
-          {{product.description}}
+          {{product.productDescription}}
         </div>
         <div class="row">
           <div class="col"></div>
           <div class="col-mb-5 operations" id="edit" (click)="onEdit(product)" type="submit"> UPDATE </div>
-          <div class="col-mb-5 operations" id="delete" (click)="onDelete(product.id)" type="submit"> DELETE </div>
+          <div class="col-mb-5 operations" id="delete" (click)="onDelete(product.productId)" type="submit"> DELETE </div>
           <div class="col"></div>
         </div>
       </a>

@@ -17,15 +17,15 @@ export class UpdateComponent implements OnInit {
   constructor(private fromBuilder: FormBuilder, private productSrv:ProductService, private router:Router, private activatedRoutes: ActivatedRoute) {
    
     this.productForm = this.fromBuilder.group({
-      id:[''],
-      name: ['', [Validators.required, Validators.minLength(3),Validators.maxLength(30)]],
-      type: ['',[Validators.required]],
-      price: ['',[Validators.required]],
-      quantity: ['',[Validators.required]],
-      quantityType: ['',[Validators.required]],
-      unit: ['1'],
+      productId:[''],
+      productName: ['', [Validators.required, Validators.minLength(3),Validators.maxLength(30)]],
+      // type: ['',[Validators.required]],
+      productPrice: ['',[Validators.required]],
+      productQuantity: ['1'],
+      cookingTime: ['',[Validators.required]],
+      // unit: ['1'],
       imageUrl: ['', [Validators.required]],
-      description: ['', [Validators.required]],
+      productDescription: ['', [Validators.required]],
     });
   }
 
@@ -72,24 +72,24 @@ export class UpdateComponent implements OnInit {
     return this.productForm.controls;
   }
 
-  get name() {
+  get productName() {
     return this.form['name'];
   }
 
-  get type() {
+  get producType() {
     return this.form['type'];
   }
 
-  get price() {
+  get productPrice() {
     return this.form['price'];
   }
 
-  get quantity() {
+  get productQuantity() {
     return this.form['quantity'];
   }
 
-  get quantityType() {
-    return this.form['quantityType'];
+  get cookingTime() {
+    return this.form['cookingTime'];
   }
 
   get unit() {
@@ -100,7 +100,7 @@ export class UpdateComponent implements OnInit {
     return this.form['imageURL'];
   }
 
-  get description() {
+  get productDescription() {
     return this.form['description'];
   }
 
