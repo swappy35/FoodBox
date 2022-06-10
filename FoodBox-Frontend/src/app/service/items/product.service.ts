@@ -21,14 +21,14 @@ export class ProductService {
   }
   // create product
   public addProduct(product: any) {
-    return this.httpClient.post(this.url, product);
+    return this.httpClient.post(this.url +'/product/add', product);
   }
 
   // update product
   public updateProduct(product: any) {
     // this.getProdId = sessionStorage.getItem('customerID');
     // return this.httpClient.put(`${this.url}/${product.id}`, product);
-    return this.httpClient.put(this.url + '/product/update' + `${product.productId}`, product);
+    return this.httpClient.put(this.url + '/product/update/' + `${product.productId}`, product);
   }
   // public updcustomer(user: any) {
   //   this.getCustId = sessionStorage.getItem('customerID');

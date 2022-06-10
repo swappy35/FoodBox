@@ -19,11 +19,9 @@ export class UpdateComponent implements OnInit {
     this.productForm = this.fromBuilder.group({
       productId:[''],
       productName: ['', [Validators.required, Validators.minLength(3),Validators.maxLength(30)]],
-      // type: ['',[Validators.required]],
       productPrice: ['',[Validators.required]],
       productQuantity: ['1'],
       cookingTime: ['',[Validators.required]],
-      // unit: ['1'],
       imageUrl: ['', [Validators.required]],
       productDescription: ['', [Validators.required]],
     });

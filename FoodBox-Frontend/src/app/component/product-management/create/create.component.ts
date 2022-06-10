@@ -16,14 +16,12 @@ export class CreateComponent implements OnInit {
   constructor(private fromBuilder: FormBuilder, private productSrv:ProductService, private router:Router) {
    
     this.productForm = this.fromBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(3),Validators.maxLength(30)]],
-      type: ['',[Validators.required]],
-      price: ['',[Validators.required]],
-      quantity: ['',[Validators.required]],
-      quantityType: ['',[Validators.required]],
-      unit: ['1'],
-      imageUrl: ['./assets/imaes/'],
-      description: ['', [Validators.required]],
+      productName: ['', [Validators.required, Validators.minLength(3),Validators.maxLength(30)]],
+      productPrice: ['',[Validators.required]],
+      productQuantity: ['1'],
+      cookingTime: ['',[Validators.required]],
+      imageUrl: ['./assets/images/', [Validators.required]],
+      productDescription: ['', [Validators.required]],
     });
   }
 
@@ -60,29 +58,29 @@ export class CreateComponent implements OnInit {
   hasError(field: any) {
     return (this.productForm.get(field)?.invalid && this.productForm.get(field)?.touched && this.productForm.get(field)?.errors);
   }
-
+  
   get form() {
     return this.productForm.controls;
   }
 
-  get name() {
-    return this.form['name'];
+  get productName() {
+    return this.form['productName'];
   }
 
-  get type() {
-    return this.form['type'];
+  get producType() {
+    return this.form['productType'];
   }
 
-  get price() {
-    return this.form['price'];
+  get productPrice() {
+    return this.form['productPrice'];
   }
 
-  get quantity() {
-    return this.form['quantity'];
+  get productQuantity() {
+    return this.form['productQuantity'];
   }
 
-  get quantityType() {
-    return this.form['quantityType'];
+  get cookingTime() {
+    return this.form['cookingTime'];
   }
 
   get unit() {
@@ -93,8 +91,7 @@ export class CreateComponent implements OnInit {
     return this.form['imageURL'];
   }
 
-  get description() {
-    return this.form['description'];
+  get productDescription() {
+    return this.form['productDescription'];
   }
-
 }
