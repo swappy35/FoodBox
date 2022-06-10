@@ -1,7 +1,7 @@
 <div id="abc">
     <!-- <img src="src/assets/images/background.jpg" alt=""> -->
     <ul>
-        <li *ngFor="let food of foods" (click)="getProductByType(food.type)">
+        <li *ngFor="let food of foods" (click)="getProductByType()">
             <a>
                 <img src="{{food.imageUrl}}" alt="{{food.name}}">
                 <div class="foodName">

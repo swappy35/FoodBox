@@ -12,37 +12,37 @@ export class FoodService {
     return[
       {
         id : 1,
-        name : 'Daily Essentials',
-        type : 'daily-essentials',
-        imageUrl:'assets/images/Home/daily-essentials.jpg',
+        name : 'Burger',
+        type : 'burger',
+        imageUrl:'assets/images/Home/burger.jpg',
 
       },
       {
         id : 2,
-        name : 'Fruits & Vegetables',
-        type : 'fruits-vegeatbles',
-        imageUrl:'assets/images/Home/fruits-vegetables.jpg',
+        name : 'Pizza',
+        type : 'pizza',
+        imageUrl:'assets/images/Home/pizza.jpg',
 
       },
       {
         id : 3,
-        name : 'Groceries',
-        type : 'groceries',
-        imageUrl:'assets/images/Home/groceries.jpg',
+        name : 'Pasta',
+        type : 'pasta',
+        imageUrl:'assets/images/Home/pasta.jpeg',
 
       },
       {
         id : 4,
-        name : 'Kitchen Appliances',
-        type : 'appliances',
-        imageUrl:'assets/images/Home/appliances.jpg',
+        name : 'Sandwich',
+        type : 'sandwich',
+        imageUrl:'assets/images/Home/sandwich.jpg',
 
       },
       {
         id : 5,
-        name : 'Utensils',
-        type : 'utensils',
-        imageUrl:'assets/images/Home/utensils.jpeg',
+        name : 'Beverages',
+        type : 'beverages',
+        imageUrl:'assets/images/Home/beverage.jpg',
 
       },
     ]

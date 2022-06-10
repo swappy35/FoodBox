@@ -21,13 +21,8 @@ export class HomeComponent implements OnInit {
     this.foods = this.foodService.getAll();
   }
 
-  getProductByType(itemType:string){
-    console.log("Navigate to "+itemType);
-    this.router.navigate(['/item-page',itemType]);
-    // this.productSrv.getProductByType(itemType).subscribe(data =>{
-    //   console.log(data);
-    //   this.products = data;
-    // });
+  getProductByType(){
+    this.router.navigate(['/products']);
     
   }
 
