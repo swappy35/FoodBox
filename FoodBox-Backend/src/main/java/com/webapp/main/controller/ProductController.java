@@ -41,8 +41,9 @@ public class ProductController {
 		return prod_repo.findById(productId);
 	}
 	
-	@PutMapping("/product/update")
-	public ProductModel putProductUpdate(@RequestBody ProductModel product) {
+	@PutMapping("/product/update/{productId}")
+	public ProductModel putProductUpdate(@RequestBody ProductModel product, @PathVariable Long productId) {
+		product.setProductId(productId);
 		return prod_repo.save(product);
 	}
 	
