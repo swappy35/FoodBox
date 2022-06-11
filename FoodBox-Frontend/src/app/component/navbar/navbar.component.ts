@@ -22,13 +22,13 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.isAdmLoggedIn = this.authService.isAdmLoggedIn;
     // if(this.isAdmLoggedIn == true)
-    console.log(this.isAdmLoggedIn);
-    console.log("Admin Navbar");
+    // console.log(this.isAdmLoggedIn);
+    // console.log("Admin Navbar");
     
     this.isCustLoggedIn = this.authService.isCustLoggedIn;
     // if(this.isCustLoggedIn == true)
-    console.log(this.isCustLoggedIn);
-    console.log("Buyer Navbar");
+    // console.log(this.isCustLoggedIn);
+    // console.log("Buyer Navbar");
 
     this.route.params.subscribe(params => {
       if(params['searchItem']){

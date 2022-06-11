@@ -1,7 +1,7 @@
-<div id="abc">
+<div id="abc" *ngIf="isAdmLoggedIn | async as isAdmLoggedIn">
     <!-- <img src="src/assets/images/background.jpg" alt=""> -->
     <ul>
-        <li *ngFor="let food of foods" (click)="getProductByType()">
+        <li *ngFor="let food of foods" (click)="getProductForAdm()">
             <a>
                 <img src="{{food.imageUrl}}" alt="{{food.name}}">
                 <div class="foodName">
@@ -11,4 +11,16 @@
         </li>
     </ul>
 </div>
-<!-- routerLink="/item-page/{{food.type}}" -->
+<div id="abc" *ngIf="!(isAdmLoggedIn | async)">
+    <!-- <img src="src/assets/images/background.jpg" alt=""> -->
+    <ul>
+        <li *ngFor="let food of foods" (click)="getProductForCust()">
+            <a>
+                <img src="{{food.imageUrl}}" alt="{{food.name}}">
+                <div class="foodName">
+                    {{food.name}}
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
