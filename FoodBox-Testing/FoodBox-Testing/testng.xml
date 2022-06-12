@@ -4,6 +4,10 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.webapp.FoodBox_Testing.CustomerRegister"/>
+      <class name="com.webapp.FoodBox_Testing.CustomerLogin"/>
+      <class name="com.webapp.FoodBox_Testing.AdminLogin"/>
+      <class name="com.webapp.FoodBox_Testing.FoodPurchase"/>
+      <class name="com.webapp.FoodBox_Testing.AdminOperations"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
