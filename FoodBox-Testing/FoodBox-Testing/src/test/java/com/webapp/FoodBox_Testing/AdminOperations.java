@@ -115,6 +115,16 @@ public class AdminOperations {
 		
 	}
 	
+	@Test (priority = 23 , description = "[Product management page]")
+	public void ProductDeletion() throws InterruptedException {
+		
+		WebElement deleteBtn = driver.findElement(By.xpath("//li/a/div[contains(text(),'Pav Bhaji1')]"
+				+ "//following::div/div[@id='delete']"));
+		deleteBtn.click();
+		Thread.sleep(800);
+		
+	}
+	
 	@Test (priority = 23 , description = " Login page close")
 	public void TearDown()throws InterruptedException{
 		WebElement createBtn = driver.findElement(By.xpath("//a[contains(text(),'LOG OUT')]"));
