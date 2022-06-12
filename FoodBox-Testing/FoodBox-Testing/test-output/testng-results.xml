@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24494" started-at="2022-06-12T06:55:38Z" finished-at="2022-06-12T06:56:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24494" started-at="2022-06-12T06:55:38Z" finished-at="2022-06-12T06:56:02Z">
+      <class name="com.webapp.FoodBox_Testing.CustomerLogin">
+        <test-method status="PASS" signature="Setup()[pri:4, instance:com.webapp.FoodBox_Testing.CustomerLogin@5c7fa833]" name="Setup" duration-ms="7234" started-at="2022-06-12T12:25:38Z" description="[Setup] Home page" finished-at="2022-06-12T12:25:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="CustLoginFail()[pri:5, instance:com.webapp.FoodBox_Testing.CustomerLogin@5c7fa833]" name="CustLoginFail" duration-ms="4524" started-at="2022-06-12T12:25:45Z" description="[Login page] customer negative scenerio" finished-at="2022-06-12T12:25:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustLoginFail -->
+        <test-method status="PASS" signature="CustLoginSuccess()[pri:6, instance:com.webapp.FoodBox_Testing.CustomerLogin@5c7fa833]" name="CustLoginSuccess" duration-ms="12603" started-at="2022-06-12T12:25:49Z" description="[Login page] customer positive scenerio" finished-at="2022-06-12T12:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustLoginSuccess -->
+        <test-method status="PASS" signature="TearDown()[pri:7, instance:com.webapp.FoodBox_Testing.CustomerLogin@5c7fa833]" name="TearDown" duration-ms="111" started-at="2022-06-12T12:26:02Z" description=" Register page close" finished-at="2022-06-12T12:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.webapp.FoodBox_Testing.CustomerLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
