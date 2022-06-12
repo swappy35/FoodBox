@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25260" started-at="2022-06-12T15:51:12Z" finished-at="2022-06-12T15:51:37Z">
+  <suite name="Default suite" duration-ms="31748" started-at="2022-06-12T16:15:50Z" finished-at="2022-06-12T16:16:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25260" started-at="2022-06-12T15:51:12Z" finished-at="2022-06-12T15:51:37Z">
-      <class name="com.webapp.FoodBox_Testing.AdminCreateOperation">
-        <test-method status="PASS" signature="Setup()[pri:20, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="Setup" duration-ms="6880" started-at="2022-06-12T21:21:12Z" description="[Setup] Home page" finished-at="2022-06-12T21:21:19Z">
+    <test name="Default test" duration-ms="31748" started-at="2022-06-12T16:15:50Z" finished-at="2022-06-12T16:16:22Z">
+      <class name="com.webapp.FoodBox_Testing.AdminOperations">
+        <test-method status="PASS" signature="Setup()[pri:20, instance:com.webapp.FoodBox_Testing.AdminOperations@5c7fa833]" name="Setup" duration-ms="6945" started-at="2022-06-12T21:45:50Z" description="[Setup] Home page" finished-at="2022-06-12T21:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="AdmLogin()[pri:21, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="AdmLogin" duration-ms="5360" started-at="2022-06-12T21:21:19Z" description="[Login page] admin" finished-at="2022-06-12T21:21:24Z">
+        <test-method status="PASS" signature="AdmLogin()[pri:21, instance:com.webapp.FoodBox_Testing.AdminOperations@5c7fa833]" name="AdmLogin" duration-ms="5310" started-at="2022-06-12T21:45:57Z" description="[Login page] admin" finished-at="2022-06-12T21:46:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdmLogin -->
-        <test-method status="PASS" signature="ProductManagement()[pri:22, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="ProductManagement" duration-ms="11330" started-at="2022-06-12T21:21:24Z" description="[Login page] admin" finished-at="2022-06-12T21:21:36Z">
+        <test-method status="PASS" signature="ProductCreation()[pri:22, instance:com.webapp.FoodBox_Testing.AdminOperations@5c7fa833]" name="ProductCreation" duration-ms="11343" started-at="2022-06-12T21:46:03Z" description="[Product management page]" finished-at="2022-06-12T21:46:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductManagement -->
-        <test-method status="PASS" signature="TearDown()[pri:23, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="TearDown" duration-ms="1671" started-at="2022-06-12T21:21:36Z" description=" Login page close" finished-at="2022-06-12T21:21:37Z">
+        </test-method> <!-- ProductCreation -->
+        <test-method status="PASS" signature="ProductUpdation()[pri:22, instance:com.webapp.FoodBox_Testing.AdminOperations@5c7fa833]" name="ProductUpdation" duration-ms="6705" started-at="2022-06-12T21:46:14Z" description="[Product management page]" finished-at="2022-06-12T21:46:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductUpdation -->
+        <test-method status="PASS" signature="TearDown()[pri:23, instance:com.webapp.FoodBox_Testing.AdminOperations@5c7fa833]" name="TearDown" duration-ms="1424" started-at="2022-06-12T21:46:21Z" description=" Login page close" finished-at="2022-06-12T21:46:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.webapp.FoodBox_Testing.AdminCreateOperation -->
+      </class> <!-- com.webapp.FoodBox_Testing.AdminOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.webapp.FoodBox_Testing.AdminCreateOperation">
+      <class name="com.webapp.FoodBox_Testing.AdminOperations">
         <methods>
-          <include name="ProductManagement"/>
+          <include name="ProductCreation"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- com.webapp.FoodBox_Testing.AdminCreateOperation -->
+      </class> <!-- com.webapp.FoodBox_Testing.AdminOperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

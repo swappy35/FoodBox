@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class AdminCreateOperation {
+public class AdminOperations {
 	
 	WebDriver driver;
 	
@@ -51,8 +51,8 @@ public class AdminCreateOperation {
 		
 	}
 	
-	@Test (priority = 22 , description = "[Login page] admin")
-	public void ProductManagement() throws InterruptedException {
+	@Test (priority = 22 , description = "[Product management page]")
+	public void ProductCreation() throws InterruptedException {
 		
 		WebElement productManagementBtn = driver.findElement(By.xpath("//a[@routerlink ='/product-management']"));
 		productManagementBtn.click();
@@ -81,6 +81,28 @@ public class AdminCreateOperation {
 		WebElement productDescription = driver.findElement(By.xpath("//textarea[@id='productDescription']"));
 		productDescription.sendKeys("Famous marathi dish. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
 				+ "Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia.");
+		Thread.sleep(800);
+		
+		WebElement submitBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+		submitBtn.click();
+		Thread.sleep(800);
+		
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		Thread.sleep(4000);
+		
+	}
+	
+	@Test (priority = 22 , description = "[Product management page]")
+	public void ProductUpdation() throws InterruptedException {
+		
+		WebElement updateBtn = driver.findElement(By.xpath("//li/a/div[contains(text(),'Pav Bhaji')]"
+				+ "//following::div/div[@id='edit']"));
+		updateBtn.click();
+		Thread.sleep(800);
+
+		WebElement productName = driver.findElement(By.xpath("//input[@id='productName']"));
+		productName.sendKeys("1");
 		Thread.sleep(800);
 		
 		WebElement submitBtn = driver.findElement(By.xpath("//button[@type='submit']"));
