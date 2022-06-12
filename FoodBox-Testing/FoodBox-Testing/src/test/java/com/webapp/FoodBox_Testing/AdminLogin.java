@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class CustomerLogin {
+public class AdminLogin {
 	
 	WebDriver driver;
 	
-	@Test (priority = 4 , description = "[Setup] Home page")
+	@Test (priority = 8 , description = "[Setup] Home page")
 	public void Setup() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 				
@@ -24,54 +24,56 @@ public class CustomerLogin {
 		Thread.sleep(4000);
 	}
 	
-	@Test (priority = 5 , description = "[Login page] customer negative scenerio")
-	public void CustLoginFail() throws InterruptedException {
-		
+	
+	@Test (priority = 9 , description = "[Login page] admin negative scenerio")
+	public void AdmLoginFail() throws InterruptedException {
+
 		WebElement registerBtn = driver.findElement(By.xpath("//a[@routerlink ='/login']"));
 		registerBtn.click();
 		
-		
+
 		WebElement email = driver.findElement(By.xpath("//input[@id='userEmail']"));
 		email.sendKeys("xyz@gmail.com");
-		
+
 		WebElement password = driver.findElement(By.xpath("//input[@id='userPassword']"));
 		password.sendKeys("Xyz@123");
 		
-		WebElement radioBtn = driver.findElement(By.xpath("//input[@value='customer']"));
+		WebElement radioBtn = driver.findElement(By.xpath("//input[@value='admin']"));
 		radioBtn.click();
-		
+
 		WebElement submitBtn = driver.findElement(By.xpath("//button[@type ='submit']"));
 		submitBtn.click();
 		Thread.sleep(4000);
+
 	}
 	
-	@Test (priority = 6 , description = "[Login page] customer positive scenerio")
-	public void CustLoginSuccess() throws InterruptedException {
-
+	@Test (priority = 10 , description = "[Login page] admin positive scenerio")
+	public void AdmLoginSuccess() throws InterruptedException {
+		
 		WebElement registerBtn = driver.findElement(By.xpath("//a[@routerlink ='/login']"));
 		registerBtn.click();
-
+		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
 		
 		WebElement email = driver.findElement(By.xpath("//input[@id='userEmail']"));
-		email.sendKeys("john@gmail.com");
-
-		WebElement password = driver.findElement(By.xpath("//input[@id='userPassword']"));
-		password.sendKeys("John@123");
+		email.sendKeys("ramu@gmail.com");
 		
-		WebElement radioBtn = driver.findElement(By.xpath("//input[@value='customer']"));
+		WebElement password = driver.findElement(By.xpath("//input[@id='userPassword']"));
+		password.sendKeys("Ramu@123");
+		
+		WebElement radioBtn = driver.findElement(By.xpath("//input[@value='admin']"));
 		radioBtn.click();
-
-
+		
+		
 		WebElement submitBtn = driver.findElement(By.xpath("//button[@type ='submit']"));
 		submitBtn.click();
+		driver.navigate().refresh();
 		Thread.sleep(4000);
-
+		
 	}
 	
-	
-	@Test (priority = 7 , description = " Login page close")
+	@Test (priority = 11 , description = " Login page close")
 	public void TearDown() {
 		driver.close();
 	}
