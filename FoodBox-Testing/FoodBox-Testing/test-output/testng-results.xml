@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28947" started-at="2022-06-12T13:09:22Z" finished-at="2022-06-12T13:09:51Z">
+  <suite name="Default suite" duration-ms="25260" started-at="2022-06-12T15:51:12Z" finished-at="2022-06-12T15:51:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28947" started-at="2022-06-12T13:09:22Z" finished-at="2022-06-12T13:09:51Z">
-      <class name="com.webapp.FoodBox_Testing.FoodPurchase">
-        <test-method status="PASS" signature="Setup()[pri:12, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="Setup" duration-ms="7034" started-at="2022-06-12T18:39:22Z" description="[Setup] Home page" finished-at="2022-06-12T18:39:29Z">
+    <test name="Default test" duration-ms="25260" started-at="2022-06-12T15:51:12Z" finished-at="2022-06-12T15:51:37Z">
+      <class name="com.webapp.FoodBox_Testing.AdminCreateOperation">
+        <test-method status="PASS" signature="Setup()[pri:20, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="Setup" duration-ms="6880" started-at="2022-06-12T21:21:12Z" description="[Setup] Home page" finished-at="2022-06-12T21:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="CustLoginSuccess()[pri:13, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="CustLoginSuccess" duration-ms="2302" started-at="2022-06-12T18:39:29Z" description="[Login page] customer positive scenerio" finished-at="2022-06-12T18:39:31Z">
+        <test-method status="PASS" signature="AdmLogin()[pri:21, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="AdmLogin" duration-ms="5360" started-at="2022-06-12T21:21:19Z" description="[Login page] admin" finished-at="2022-06-12T21:21:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CustLoginSuccess -->
-        <test-method status="PASS" signature="ProductPage()[pri:14, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="ProductPage" duration-ms="2070" started-at="2022-06-12T18:39:31Z" description="[Products page]" finished-at="2022-06-12T18:39:33Z">
+        </test-method> <!-- AdmLogin -->
+        <test-method status="PASS" signature="ProductManagement()[pri:22, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="ProductManagement" duration-ms="11330" started-at="2022-06-12T21:21:24Z" description="[Login page] admin" finished-at="2022-06-12T21:21:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductPage -->
-        <test-method status="PASS" signature="SearchBar()[pri:15, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="SearchBar" duration-ms="2066" started-at="2022-06-12T18:39:33Z" description="[Products page] Search bar" finished-at="2022-06-12T18:39:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBar -->
-        <test-method status="PASS" signature="SelectProd()[pri:16, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="SelectProd" duration-ms="6247" started-at="2022-06-12T18:39:35Z" description="[Products page] Select product" finished-at="2022-06-12T18:39:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectProd -->
-        <test-method status="PASS" signature="Cart()[pri:17, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="Cart" duration-ms="2113" started-at="2022-06-12T18:39:41Z" description="[Cart page]" finished-at="2022-06-12T18:39:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Cart -->
-        <test-method status="PASS" signature="CheckOut()[pri:18, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="CheckOut" duration-ms="7023" started-at="2022-06-12T18:39:43Z" description="[Checkout page]" finished-at="2022-06-12T18:39:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckOut -->
-        <test-method status="PASS" signature="TearDown()[pri:19, instance:com.webapp.FoodBox_Testing.FoodPurchase@39aeed2f]" name="TearDown" duration-ms="70" started-at="2022-06-12T18:39:50Z" description=" Login page close" finished-at="2022-06-12T18:39:51Z">
+        </test-method> <!-- ProductManagement -->
+        <test-method status="PASS" signature="TearDown()[pri:23, instance:com.webapp.FoodBox_Testing.AdminCreateOperation@5c7fa833]" name="TearDown" duration-ms="1671" started-at="2022-06-12T21:21:36Z" description=" Login page close" finished-at="2022-06-12T21:21:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.webapp.FoodBox_Testing.FoodPurchase -->
+      </class> <!-- com.webapp.FoodBox_Testing.AdminCreateOperation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

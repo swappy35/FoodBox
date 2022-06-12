@@ -28,8 +28,8 @@ public class AdminLogin {
 	@Test (priority = 9 , description = "[Login page] admin negative scenerio")
 	public void AdmLoginFail() throws InterruptedException {
 
-		WebElement registerBtn = driver.findElement(By.xpath("//a[@routerlink ='/login']"));
-		registerBtn.click();
+		WebElement loginBtn = driver.findElement(By.xpath("//a[@routerlink ='/login']"));
+		loginBtn.click();
 		
 
 		WebElement email = driver.findElement(By.xpath("//input[@id='userEmail']"));
@@ -50,8 +50,8 @@ public class AdminLogin {
 	@Test (priority = 10 , description = "[Login page] admin positive scenerio")
 	public void AdmLoginSuccess() throws InterruptedException {
 		
-		WebElement registerBtn = driver.findElement(By.xpath("//a[@routerlink ='/login']"));
-		registerBtn.click();
+		WebElement loginBtn = driver.findElement(By.xpath("//a[@routerlink ='/login']"));
+		loginBtn.click();
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
